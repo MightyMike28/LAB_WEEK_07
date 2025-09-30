@@ -49,10 +49,14 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.9.0")
     implementation("androidx.fragment:fragment-ktx:1.8.2")
 
-    // Google Maps dependency (gunakan hanya satu versi stabil)
+    // Google Maps
     implementation("com.google.android.gms:play-services-maps:18.1.0")
+
+    // Google Play Services Location (untuk FusedLocationProviderClient)
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
